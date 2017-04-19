@@ -164,6 +164,7 @@ elf_error:
 /* functions should skip PLT hooking */
 static const char *skip_syms[] = {
 	"mcount",
+	"_mcount",
 	"__fentry__",
 	"__gnu_mcount_nc",
 	"__cyg_profile_func_enter",
@@ -173,6 +174,7 @@ static const char *skip_syms[] = {
 	"__cxa_throw",
 	"__cxa_begin_catch",
 	"__cxa_end_catch",
+	"__cxa_finalize",
 	"_Unwind_Resume",
 };
 
